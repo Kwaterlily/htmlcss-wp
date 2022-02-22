@@ -1,0 +1,147 @@
+/* general */
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin:0 auto;
+} 
+
+/* header */
+.crearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+#logo img{
+    height: 70px;
+    padding-right: 30px;
+    /* border-right: #d7d7d7;   */
+}
+
+nav li a {
+    text-decoration: none;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #cbcbcb;
+}
+nav {
+    padding: 40px 0;
+}
+
+
+.hero {
+    width: 100%;
+    height: 500px;
+    border: solid 2px red;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hoverlay::after {
+    content: "";
+    position: absolute;
+    top 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 2);
+}
+
+.hero .banner-text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 60%;
+    color: white;
+}
+.hero .banner-text h1 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+/* /header e primo box */
+
+/* secondo, terzo e quarto box */
+.sfondo {
+    background-color: #0086FE;
+    overflow: auto;
+}
+
+.lightblue {
+    background-color: #ABCFE6;  
+}
+
+#head {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+
+#uno {
+    width: 380px;
+    height: 500px;
+    margin-bottom: 30px;
+    float: left;
+    background-color: #8702FE;        
+}
+
+#due {
+    width: 380px;
+    height: 500px;
+    margin-bottom: 30px;
+    float: right;   
+}
+
+#tre {
+    width: 380px;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    float: left;
+}
+/* /secondo, terzo e quarto box */
+
+/* footer */
+footer {
+    width: 1200px;
+    margin: auto;
+}
+
+#violet {
+    width: 100%;
+    height: 100px;
+    background-color: #8702FE;
+    margin-top: -10px;
+}
+/* /footer */
