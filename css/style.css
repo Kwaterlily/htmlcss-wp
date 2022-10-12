@@ -1,147 +1,156 @@
-/* general */
-* {    
+/* General */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    margin:0 auto;
-} 
+body {
+    font-family: 'Heebo', sans-serif;
+}
 
-/* header */
-.crearfix::after {
+.clearfix {
     content: "";
     display: table;
     clear: both;
 }
 
-header {
-    width: 1200px;
-    margin: 30px auto;
+/* Utility */
+.debug {
+    /* height: 500px; */
+    border: 1px solid red;
 }
 
-section {
-    width: 1200px;
-    margin: 30px auto;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-#logo img{
-    height: 70px;
-    padding-right: 30px;
-    /* border-right: #d7d7d7;   */
+.red {
+    color: red;
 }
+ /* *** Header *** */
 
-nav li a {
+ /* Logo */
+ #logo img {
+     height: 70px;
+     padding-right: 30px;
+     border-right: 1px solid #d7d7d7;
+ }
+
+ /* Navbar */
+ nav {
+     padding: 40px 0;
+ }
+ nav ul li {
+     list-style-type: none;
+     display: inline-block;
+     text-transform: uppercase;
+     padding-right: 10px;
+     font-size: 18px;
+     font-weight: 300;
+    }
+nav ul li a {
     text-decoration: none;
+    color: #858585;
 }
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    text-transform: uppercase;
-    padding-right: 10px;
-    font-size: 18px;
-    font-weight: 200;
-    color: #cbcbcb;
-}
-nav {
-    padding: 40px 0;
+nav ul li a:hover {
+    text-decoration: none;
+    color: #bf4c2e;
 }
 
-
+/* Hero */
 .hero {
+    position: relative;
     width: 100%;
     height: 500px;
-    border: solid 2px red;
-    background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
 }
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.hoverlay::after {
+.overlay::before {
     content: "";
     position: absolute;
-    top 0;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 2);
+    background-color: rgba(0,0,0,0.2);
 }
 
-.hero .banner-text{
+.hero .banner-txt {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
-    width: 60%;
+    bottom: 50px;
+    left: 50px;
+    width: 50%;
     color: white;
 }
-.hero .banner-text h1 {
+.hero .banner-txt h1 {
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1em;
 }
 
-/* /header e primo box */
+/* *** Main *** */
 
-/* secondo, terzo e quarto box */
-.sfondo {
-    background-color: #0086FE;
-    overflow: auto;
+/* Title */
+.title {
+    padding: 40px 0;
+    line-height: 1;
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.title h3 {
+    color: #858585;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-.lightblue {
-    background-color: #ABCFE6;  
+/* Column */
+.col {
+    float: left;
+    width: 20%;
+}
+.col-center {
+    width: 60%;
+    padding: 0 20px;
 }
 
-#head {
+.col-img {
+    position: relative;
     width: 100%;
-    height: 100px;
-    margin-bottom: 30px;
+    height: 200px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-#uno {
-    width: 380px;
-    height: 500px;
-    margin-bottom: 30px;
-    float: left;
-    background-color: #8702FE;        
+.col .col-txt .col-title {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 0 5px;
+}
+.col .col-txt p{
+    color: #858585;
+    font-weight: 300;
+    line-height: 1.2em;
 }
 
-#due {
-    width: 380px;
-    height: 500px;
-    margin-bottom: 30px;
-    float: right;   
-}
-
-#tre {
-    width: 380px;
-    height: 500px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    float: left;
-}
-/* /secondo, terzo e quarto box */
-
-/* footer */
+/* *** Footer *** */
 footer {
-    width: 1200px;
-    margin: auto;
-}
-
-#violet {
     width: 100%;
-    height: 100px;
-    background-color: #8702FE;
-    margin-top: -10px;
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
 }
-/* /footer */
